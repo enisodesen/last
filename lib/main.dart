@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:new_examples/upper_app/uper_home_page.dart';
+import 'package:get_storage/get_storage.dart';
 
-void main() {
+import 'package:new_examples/get_storage/get_storage_page.dart';
+
+void main() async {
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: UpperHome(),
+      home: GetStoragePage(),
     );
   }
 }
