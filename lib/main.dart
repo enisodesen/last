@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:new_examples/route_navigation/route_navigation.dart';
+import 'package:new_examples/upper_app/uper_home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RouteNavigation(),
+      home: UpperHome(),
     );
   }
 }
